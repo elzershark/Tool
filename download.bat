@@ -9,7 +9,7 @@ Call :UnZipFile "%cd%" "%cd%\Programm\master.zip"
 del %cd%\Programm\master.zip 2>nul
 move %cd%\Tool-master\Programm\*.* %cd%\Programm\
 move %cd%\Tool-master\*.* %cd%\
-del %cd%\Tool-master 2>nul
+rd %cd%\Tool-master 2>nul
 exit /b
 
 :UnZipFile <ExtractTo> <newzipfile>
