@@ -6,9 +6,9 @@ cd ..
 setlocal
 cd /d %~dp0
 Call :UnZipFile "%cd%" "%cd%\Programm\master.zip"
+del %cd%\Programm\master.zip 2>nul
 move %cd%\Tool-master\Programm\*.* %cd%\Programm\
 move %cd%\Tool-master\*.* %cd%\
-del %cd%\Programm\master.zip 2>nul
 del %cd%\Tool-master 2>nul
 exit /b
 
